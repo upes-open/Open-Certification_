@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.body {
+    /* transition: background-color .5s; */
+    background-color: #000000 important!;
+  }
+ 
+#mySidenav{
+    margin-left: 82%;
+}
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #000000;
+    display: block;
+    transition: 0.3s;
+    line-height: 150%;
+    margin-top: 5%;
+    align-items: self-end;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .sidenav p{
+    padding: 8px 10px 8px 32px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #3a3a3a;
+    display: block;
+    transition: 0.3s;
+    line-height: 150%;
+    margin-top: 5%;
+    align-content: space-evenly;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .sidenav li{
+    display: inline-block;
+    margin-left: 0;
+    color: #4b4b4b;
+    opacity: 2;
+    font-size: 15px;
+
+  }
+  .sidenav a:hover {
+    color: #e5ffa5;
+  }
+
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-left .5s;
+    padding: 16px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }  
+
+
+.logo{
+    size: 3px;
+    margin-left: 100%;
+}
+.heading{
+    padding-left: 10%;
+    padding-top: 10%;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.heading p{
+    color:#818181;
+    font-size: 20px;
+}
+
+
+.heading h1{
+    color:#f1f1f1;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.heading button {
+    margin-left:1%;
+    font-size: 100%;
+}
+
+.logonav{
+    padding-left:95%;
+    padding-top:2%;
+    font-size:30px;
+    cursor:pointer;
+   
+    color: #ffffff;
+}
