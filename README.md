@@ -6,13 +6,13 @@ This web application allows you to generate certificates for an event using a ce
 
 To run this project, you need to have the following software installed on your machine:
 
-- Flask
+- Django
 
 ## Installation
 
 1. Clone this repository: `git clone https://github.com/upes-open/Open-Certification_.git`
 2. Navigate to the project directory: `cd certificate-generator`
-3. Install dependencies: `pip install Flask`
+3. Install dependencies: `pip install django`
 
 # Contributers
 
