@@ -15,17 +15,19 @@
 <!-- -----------Home Page--------- -->
 
 <section class="parallax-container">
-<div class="navbar">
-  <!-- <div class="bg-div">
-    <img class="logo-img" src="assets/open logo.png" > -->
+  <div class="navbar">
+    <div class="navbar1">
+      <ul>
+        <li><a class="active" href="#logo"> <img src="assets/open logo.png"/></a></li>
+      </ul>
+    </div>
     <div id="mySidenav" class="sidenav">
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <span><b><a href="#">NAVIGATION</a></b></span>
       <br><br>
       <a href="#">HOME</a>
-      <a href="#">ABOUT</a>
-      <a href="#">SERVICES</a>
-      <a href="#">CREATE</a>
+      <a href="#parallax-container parallax-container2">ABOUT</a>
+      <a href="#buffer">TEMPLATES</a>
       <a href="#">CONTACT</a>
       <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum voluptatem porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque repre.</p>
       <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
@@ -73,24 +75,59 @@
       <p>/*We provide you with multiple certificates to choose from so that you can have the product you want! */</p>
     </div>
     <div class="carouselcerts">
-      <input type="radio" name="position" checked />
       <input type="radio" name="position" />
-      <input type="radio" name="position" />
+      <input type="radio" name="position"/>
+      <input type="radio" name="position"  checked />
       <input type="radio" name="position" />
       <input type="radio" name="position" />
       <main id="carousel">
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
-        <div class="item"></div>
+        <div class="item">
+          <div class="cert1"></div>
+          <button type="button" class="btn btn-outline-light" value="Input Button" onclick="cert1()">Select</button>
+          <!-- <button type="button" class="btn btn-success" value="Input Button" onclick="cert1()">Select</button> -->
+        </div>
+        <div class="item">
+          <div class="cert1"></div>
+          <button type="button" class="btn btn-success">Select</button>
+        </div>
+        <div class="item">
+          <div class="cert1"></div>
+          <button type="button" class="btn btn-success">Select</button>
+        </div>
+        <div class="item">
+          <div class="cert1"></div>
+          <button type="button" class="btn btn-success">Select</button>
+        </div>
+        <div class="item">
+          <div class="cert1"></div>
+          <button type="button" class="btn btn-success">Select</button>
+        </div> 
         <main>
     </div>
+<!-- ----------------contact us page---------------->
+<section class="contact">
+  <div class="con">
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="container1">
+      <h1>Contact us </h1>
+      <i class="fa-sharp fa-solid fa-location-dot"></i><p>&nbsp;Bidholi Campus, UPES, Dehradun, India</p>
+      <br>
+      <i class="fa-solid fa-envelope"></i><p>&nbsp;opencommunity@ddn.upes.ac.in</p>
+    </div> 
+    <br>
+    <br>
+    <br>
 
+  </div>
 
-    </section>
-
-  </section>                                     
+</section> 
+</section>
+                                    
 
 </div>
 
@@ -111,5 +148,15 @@
       document.body.style.backgroundColor = "white";
     }
     </script>
+
+
+<!-- --------------reloacation scripts----------->
+
+<script>
+  function cert1()
+  {
+       location.href = "cert.html";
+  } 
+  </script>
 </body>
 </html>
