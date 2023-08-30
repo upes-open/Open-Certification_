@@ -322,9 +322,37 @@ div.item {
   background-image: url(../images/certificate-1.png);
   background-size: contain;
 }
-#template2{
+
+.cert2{
+  width: 565px;
+  height: 400px;
   background-image: url(../images/certificate-2.png);
+  background-size: contain;
 }
+
+.cert3{
+  width: 565px;
+  height: 400px;
+  background-image: url(../images/certificate-3.png);
+  background-size: contain;
+}
+
+.cert4{
+  width: 565px;
+  height: 400px;
+  background-image: url(../images/certificate-4.png);
+  background-size: contain;
+}
+
+.cert5{
+  width: 565px;
+  height: 400px;
+  background-image: url(../images/certificate-5.png);
+  background-size: contain;
+}
+/* #template2{
+  background-image: url(../images/certificate-2.png);
+} */
 .item button{
   margin-top: 10%;
   background-color: #A0CC3A;
