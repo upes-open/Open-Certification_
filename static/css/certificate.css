@@ -3,7 +3,7 @@
 
 .page {
     background-attachment: fixed;
-    background-image: url(../assets/background.png);
+    background-image: url(../images/background.png);
     background-position: center;
     background-size: cover;
     height:800px;

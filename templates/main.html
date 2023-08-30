@@ -7,7 +7,7 @@
     <title>Open Certification</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/b20360a690.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../static/css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js" integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa" crossorigin="anonymous"></script>
 
@@ -20,7 +20,7 @@
   <div class="navbar">
     <div class="navbar1">
       <ul>
-        <li><a class="active" href="#logo"> <img src="assets/open logo.png"/></a></li>
+        <li><a class="active" href="#logo"> <img src="../static/images/open logo.png"/></a></li>
       </ul>
     </div>
     <div id="mySidenav" class="sidenav">
@@ -47,7 +47,7 @@
       <p>OPEN COMMUNITY WELCOMES YOU</p>
       <h1>OPEN <br>CERTIFICATIONS</h1><br>
       <p>/* This project is developed by <br>members of open community  */</p>
-      <button type="button" class="btn btn-outline-light">CREATE</button>
+      <a href="{{ url_for('create') }}" type="button" class="btn btn-outline-light">CREATE</a>
       <button type="button" class="btn btn-outline-light">KNOW MORE</button>
       </div>
   
@@ -58,7 +58,7 @@
   <section class="parallax-container parallax-container2">
       <div class="row">
         <div class="about-col-1">
-            <img src="assets/certificatelogo.png">
+            <img src="../static/images/certificatelogo.png">
         </div>
         <div class="about-col-2">
             <h1 class="sub-title">WHAT IS <span>OPEN CERTIFICATION</span> ?</h1> 
@@ -85,19 +85,19 @@
       <main id="carousel">
         <div class="item">
           <div class="cert1"></div>
-          <button type="button" class="btn btn-outline-light" value="Input Button" onclick="cert1()">Select</button>
+          <button  type="button" class="btn btn-outline-light" value="Input Button" onclick="cert1()">Select</button>
           <!-- <button type="button" class="btn btn-success" value="Input Button" onclick="cert1()">Select</button> -->
         </div>
         <div class="item">
           <div class="cert1"></div>
-          <button type="button" class="btn btn-success">Select</button>
+          <button  type="button" class="btn btn-success">Select</button>
         </div>
         <div class="item">
           <div class="cert1"></div>
           <button type="button" class="btn btn-success">Select</button>
         </div>
         <div class="item">
-          <div class="cert1"></div>
+          <div class="cert1" id="template2"></div>
           <button type="button" class="btn btn-success">Select</button>
         </div>
         <div class="item">
