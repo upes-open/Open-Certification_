@@ -13,6 +13,7 @@
     display: inline-block;
   }
 
+
 .navbar1 img{
   width: 100px;
   height: 80px;
@@ -29,10 +30,6 @@
  
 #mySidenav{
     margin-left: 82%;
-    /* overflow: hidden;
-    position: fixed;
-    top: 0;
-    width: 100%; */
 }
   .sidenav {
     height: 100%;
@@ -422,6 +419,27 @@ input:nth-of-type(5):checked ~ main#carousel {
   background-color: #ccff54;
 }
 
+/* -------------arrow---------- */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 24px;
+  color: #fff;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.left-arrow {
+  left: 20px; 
+}
+
+.right-arrow {
+  right: 20px; 
+}
+
+/* --------contact----------- */
+
 .contact{
   background-image: url(../images/background.png);
   background-size: cover;
@@ -452,3 +470,20 @@ input:nth-of-type(5):checked ~ main#carousel {
   font-weight: bold;
   font-family: 'Montserrat', sans-serif;
 }
+
+
+/* ------scroll-button------ */
+.scroll button {
+  width: 4%;
+  background-color: #A0CC3A;
+  border: #A0CC3A;
+  margin-left: 90%;
+  margin-top: 6%;
+}
+
+.scroll button:hover{
+  background-color: #ccff54;
+}
+
+
+
