@@ -263,8 +263,6 @@
 }
 
 
-
-/* Hide the default radio button */
 input[type="radio"] {
   appearance: none;
   -webkit-appearance: none;
@@ -301,7 +299,7 @@ main#carousel {
   --items: 5;
   --middle: 3;
   --position: 1;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 div.item {
@@ -350,9 +348,7 @@ div.item {
   background-image: url(../images/certificate-5.png);
   background-size: contain;
 }
-/* #template2{
-  background-image: url(../images/certificate-2.png);
-} */
+
 .item button{
   margin-top: 10%;
   background-color: #A0CC3A;
@@ -363,29 +359,18 @@ div.item {
 }
 div.item:nth-of-type(1) {
   --offset: 1;
-  /* background-image: url(assets/cert1.png);
-  background-size: contain; */
-  /* background-color: #90f1ef; */
 }
 div.item:nth-of-type(2) {
   --offset: 2;
-  /* background-image: url(assets/cert1.png);
-  background-size: contain; */
 }
 div.item:nth-of-type(3) {
   --offset: 3;
-  /* background-image: url(assets/cert1.png);
-  background-size: contain; */
 }
 div.item:nth-of-type(4) {
   --offset: 4;
-  /* background-image: url(assets/cert1.png);
-  background-size: contain; */
 }
 div.item:nth-of-type(5) {
   --offset: 5;
-  /* background-image: url(assets/cert1.png);
-  background-size: contain; */
 }
 
 input:nth-of-type(1) {
@@ -426,6 +411,15 @@ input:nth-of-type(5) {
 }
 input:nth-of-type(5):checked ~ main#carousel {
   --position: 5;
+}
+
+#carousel button a{
+  text-decoration: none;
+  color: black;
+}
+
+#carousel button:hover{
+  background-color: #ccff54;
 }
 
 .contact{

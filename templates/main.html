@@ -17,7 +17,7 @@
 <!-- -----------Home Page--------- -->
 
 <section class="parallax-container">
-  <div class="navbar">
+  <div class="navbar" style="z-index: 2;">
     <div class="navbar1">
       <ul>
         <li><a class="active" href="#logo"> <img src="../static/images/open logo.png"/></a></li>
@@ -27,34 +27,34 @@
       <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
       <span><b><a href="#">NAVIGATION</a></b></span>
       <br><br>
-      <a href="#">HOME</a>
-      <a href="#parallax-container parallax-container2">ABOUT</a>
-      <a href="#buffer">TEMPLATES</a>
-      <a href="#">CONTACT</a>
-      <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum voluptatem porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque repre.</p>
-      <li> <a href="#"><i class="fa fa-facebook"></i></a></li>
-      <li> <a href="#"><i class="fa fa-twitter"></i></a></li>
-      <li> <a href="#"><i class="fa fa-instagram"></i></a></li>
-      <li> <a href="#"><i class="fa fa-behance"></i></a></li>
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT</a>
+      <a href="#templates">TEMPLATES</a>
+      <a href="#contact-us">CONTACT</a>
+      <p style="line-height: 200%;">Instant Certificates: Effortless <br>for Participants & Winners – Crafted and Innovated by <br>UPES's OPEN Community.</p>
+      <li> <a href="https://www.linkedin.com/company/open-community/mycompany/"><i class="fa fa-linkedin"></i></a></li>
+      <li> <a href="https://twitter.com/UpesOpen"><i class="fa fa-twitter"></i></a></li>
+      <li> <a href="https://www.instagram.com/upesopen_/"><i class="fa fa-instagram"></i></a></li>
+      <li> <a href="https://github.com/upes-open"><i class="fa fa-github"></i></a></li>
       </div>
       <div class="logonav">
           <span onclick="openNav()">&#9776;</span>
       </div>
 </div>
 <!-- </div> -->
-
+<div id="home">
     <div class="heading">
       <p>OPEN COMMUNITY WELCOMES YOU</p>
       <h1>OPEN <br>CERTIFICATIONS</h1><br>
       <p>/* This project is developed by <br>members of open community  */</p>
-      <a href="{{ url_for('create') }}" type="button" class="btn btn-outline-light">CREATE</a>
-      <button type="button" class="btn btn-outline-light">KNOW MORE</button>
+      <a href="#templates" type="button" class="btn btn-outline-light">CREATE</a>
+      <a href="#about" type="button" class="btn btn-outline-light">KNOW MORE</a>
       </div>
-  
+    </div>
 </section>
 
 <!-- ---------------about page -------------- -->
-
+<div id="about">
   <section class="parallax-container parallax-container2">
       <div class="row">
         <div class="about-col-1">
@@ -62,21 +62,23 @@
         </div>
         <div class="about-col-2">
             <h1 class="sub-title">WHAT IS <span>OPEN CERTIFICATION</span> ?</h1> 
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum possimus rerum dolores ipsa placeat eum qui rem illum sunt consequatur architecto, tempore laboriosam mollitia quas ea, quis magnam a atque.
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nihil qui assumenda, dicta repellat ipsum laborum tempora sunt exercitationem quas ab provident enim quis, aliquam debitis eaque ducimus ipsam. Expedita.
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum id vitae nisi quisquam aut iusto porro sequi, facilis cupiditate illum odit aliquam provident autem, quo et maxime, consequatur repudiandae magni?
-            </p>
-      
+            <p>Open Certification is a groundbreaking project developed to revolutionize the way certificates are generated for participants and winners of events. With the aim of alleviating the intricate process of certificate
+              design, this innovative solution is the brainchild of the talented members of the OPEN Community at UPES Dehradun. Open Certification eliminates the painstaking tasks of crafting and formatting certificates by offering
+              a streamlined, one-click approach. Now, event organizers can effortlessly create certificates of exceptional quality, freeing them from the complexities of design work. This project is set to redefine the certificate
+              generation landscape, making it easier than ever to recognize and appreciate the achievements of event participants.
+            </p>    
     </div>
   </section>
-
+</div>
   <!-- -----------------certificate selection -------------- -->
+  
+<div id="templates">
   <section class="buffer">
     <div class="certhead">
       <h1>CERTIFICATE TEMPLATES</h1>
       <p>    /*We provide you with multiple certificates to choose from so that you can have the product you want! */</p>
     </div>
-    <div class="carouselcerts">
+    <div class="carouselcerts" style="z-index: 1;">
       <input type="radio" name="position" />
       <input type="radio" name="position"/>
       <input type="radio" name="position"  checked />
@@ -85,29 +87,30 @@
       <main id="carousel">
         <div class="item">
           <div class="cert1"></div>
-          <button type="button" class="btn btn-outline-light" value="Input Button" onclick="cert1()">Select</button>
+          <button type="button" class="btn btn-success"> <a href="../templates/participants/certificate-1.html" >Select</a></button>
         </div>
         <div class="item">
           <div class="cert2"></div>
-          <!-- /<button type="button" ><a href="generate-certs/participants/certificate-2.html">Select</a></button> -->
-          <button type="button" class="btn btn-success" onclick="redirectToCertificate()">Select</button>
-          <button type="button" class="btn btn-success" onclick="redirectToCertificate()">Select</button>
+          <button type="button" class="btn btn-success"> <a href="../templates/participants/certificate-2.html">Select</a></button>
         </div>
         <div class="item">
           <div class="cert3"></div>
-          <button type="button" class="btn btn-success">Select</button>
+          <button type="button" class="btn btn-success"> <a href="../templates/participants/certificate-3.html">Select</a></button>
         </div>
         <div class="item">
           <div class="cert4"></div>
-          <button type="button" class="btn btn-success">Select</button>
+          <button type="button" class="btn btn-success"> <a href="../templates/participants/certificate-4.html">Select</a></button>
         </div>
         <div class="item">
           <div class="cert5"></div>
-          <button type="button" class="btn btn-success">Select</button>
-        </div> 
+          <button type="button" class="btn btn-success"> <a href="../templates/participants/certificate-5.html">Select</a></button>
+        </div>
         <main>
     </div>
+  </div>
+</section>
 <!-- ----------------contact us page---------------->
+<div id="contact-us">
 <section class="contact">
   <div class="con">
     <br>
@@ -129,7 +132,8 @@
   </div>
 
 </section> 
-</section>
+</div>
+
                                     
 
 </div>
@@ -153,13 +157,5 @@
     </script>
 
 
-<!-- --------------reloacation scripts----------->
-
-<script>
-  function cert1()
-  {
-       location.href = "cert.html";
-  } 
-  </script>
 </body>
 </html>
